@@ -1,0 +1,51 @@
+@import 'config';
+
+%foobar {
+    background-color: $secondary;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hello {
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+
+    &-button {
+        height: 20vmin;
+        width: 20vmin;
+    }
+}
+
+.foo {
+    @extend %foobar;
+    color: blue;
+}
+
+.bar {
+    @extend %foobar;
+    color: purple;
+}
+
+@import 'mobile';

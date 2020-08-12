@@ -1,0 +1,52 @@
+.bar, .foo {
+  background-color: #DAE52B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hello {
+  background-color: #20DB1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+.hello-button {
+  height: 20vmin;
+  width: 20vmin;
+}
+
+.foo {
+  color: blue;
+}
+
+.bar {
+  color: purple;
+}
+
+@media (max-width: 700px) {
+  .hello {
+    padding: 20%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
