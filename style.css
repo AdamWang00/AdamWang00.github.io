@@ -1,5 +1,106 @@
-.bar, .foo {
-  background-color: #DAE52B;
+@font-face {
+  src: url("fonts/Lora-Regular.ttf") format("truetype");
+  font-family: "Lora";
+  font-weight: 400;
+}
+@font-face {
+  src: url("fonts/Lora-Medium.ttf") format("truetype");
+  font-family: "Lora";
+  font-weight: 500;
+}
+@font-face {
+  src: url("fonts/Lora-SemiBold.ttf") format("truetype");
+  font-family: "Lora";
+  font-weight: 600;
+}
+[hidden] {
+  display: none !important;
+}
+
+[disabled] {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  flex: 1;
+}
+
+@keyframes icon {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+#fade-1 {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#fade-2 {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#fade-3 {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#fade-4 {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#fade-5 {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#icon-1 {
+  animation-name: icon;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: calc(1s / 3 + 0.25s);
+}
+
+#icon-2 {
+  animation-name: icon;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: calc(2s / 3 + 0.25s);
+}
+
+#icon-3 {
+  animation-name: icon;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: calc(3s / 3 + 0.25s);
+}
+
+#icon-4 {
+  animation-name: icon;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: calc(4s / 3 + 0.25s);
 }
 
 * {
@@ -9,44 +110,133 @@
 }
 
 body {
-  background-color: #f4f4f4;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4F4F4;
+  color: white;
+  font-family: "Lora";
   line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  /* IE 11 */
+  scrollbar-width: none;
+  /* Firefox 64 */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 
-.hello {
-  background-color: #20DB1C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10%;
-}
-.hello-button {
-  height: 20vmin;
-  width: 20vmin;
+#modal {
+  background-color: #242526;
+  position: absolute;
+  top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 1s, top 1s;
 }
 
-.foo {
-  color: blue;
+.top-line {
+  flex: 0 0 auto;
+  height: 20px;
+  background-color: #66B1CC;
 }
 
-.bar {
-  color: purple;
+.pfp {
+  flex: 0 0 auto;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  background-image: url("images/dotted-background.svg");
+}
+.pfp img {
+  display: inline-block;
+  height: 100%;
+}
+.pfp .icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px 0px;
+}
+.pfp .icons a {
+  flex: 1;
+  display: block;
+  position: relative;
+  left: 100px;
+  color: black;
+  font-size: 28px;
+  padding: 0px 16px;
+  transition: color 0.2s;
+}
+.pfp .icons a:hover {
+  color: #66B1CC;
 }
 
-@media (max-width: 700px) {
-  .hello {
-    padding: 20%;
-  }
+.intro {
+  background-color: #4C5364;
+}
+.intro .mark {
+  transition: color 0.5s;
+  font-weight: 500;
+}
+.intro a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.intro a:hover {
+  text-decoration: underline;
+  color: #cc8400;
+}
+.intro h1 {
+  font-size: calc(12px + 1.2vw + 1.2vh);
+  font-weight: 600;
+}
+.intro h1 .mark {
+  font-weight: 600;
+}
+.intro div {
+  margin: 10px 20px;
+  text-align: center;
+  max-width: 1000px;
+  font-size: calc(8px + 0.6vw + 0.6vh);
+}
+.intro div.footer {
+  margin-top: auto;
+  margin-bottom: 10px;
+  color: #CCCCCC;
+  font-size: 12px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.clickable.close {
+  width: 100%;
+  height: calc(15px + 1.5vw + 1.5vh);
+  font-size: calc(12px + 1.2vw + 1.2vh);
+  opacity: 0.8;
+  background-color: gray;
+  transition: opacity 0.2s;
+}
+.clickable.close:hover {
+  opacity: 1;
+}
+.clickable.close i {
+  display: block;
+}
+
+.projects {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

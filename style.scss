@@ -1,8 +1,5 @@
+// Import fonts, vars
 @import 'config';
-
-%foobar {
-    background-color: $secondary;
-}
 
 * {
     box-sizing: border-box;
@@ -11,41 +8,149 @@
 }
 
 body {
-    background-color: $light-color;
+    background-color: $background-color;
+    color: $primary;
     font-family: $font-stack;
     line-height: 1.6;
+    position: relative;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
 
-.hello {
-    background-color: $primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10%;
+#modal {
+    background-color: #242526;
+    position: absolute;
+    top: -100vh;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 1s, top 1s;
+}
 
-    &-button {
-        height: 20vmin;
-        width: 20vmin;
+.top-line {
+    flex: 0 0 auto;
+    height: 20px;
+    background-color: $top-color;
+}
+
+.pfp {
+    flex: 0 0 auto;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    background-image: url('images/dotted-background.svg');
+
+    img {
+        display: inline-block;
+        height: 100%;
+    }
+
+    .icons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 10px 0px;
+
+        a {
+            flex: 1;
+            display: block;
+            position: relative;
+            left: 100px;
+
+            color: black;
+            font-size: 28px;
+            padding: 0px 16px;
+
+            transition: color 0.2s;
+
+            &:hover {
+                color: #66B1CC;
+            }
+        }
     }
 }
 
-.foo {
-    @extend %foobar;
-    color: blue;
+.intro {
+    background-color: $bot-color;
+
+    .mark {
+        transition: color 0.5s;
+        font-weight: 500;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+            text-decoration: underline;
+            color: scale-color($secondary, $lightness: -20%);
+        }
+    }
+
+    h1 {
+        font-size: calc(12px + 1.2vw + 1.2vh);
+        font-weight: 600;
+
+        .mark {
+            font-weight: 600;
+        }
+    }
+
+    div {
+        margin: 10px 20px;
+        text-align: center;
+        max-width: 1000px;
+        font-size: calc(8px + 0.6vw + 0.6vh);
+
+        &.footer {
+            margin-top: auto;
+            margin-bottom: 10px;
+            color: #CCCCCC;
+            font-size: 12px;
+        }
+    }
 }
 
-.bar {
-    @extend %foobar;
-    color: purple;
+.clickable {
+    cursor: pointer;
+
+    &.close {
+        width: 100%;
+        height: calc(15px + 1.5vw + 1.5vh);
+        font-size: calc(12px + 1.2vw + 1.2vh);
+        opacity: 0.8;
+        background-color: gray;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        i {
+            display: block;
+        }
+    }
 }
 
+.projects {
+    width: 100%;
+}
+
+// Import media queries
 @import 'mobile';
