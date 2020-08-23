@@ -103,6 +103,34 @@
   animation-delay: calc(4s / 3 + 0.25s);
 }
 
+#project-1 {
+  padding: calc(6px + 0.6vw + 0.6vh);
+  font-size: calc(8px + 0.8vw + 0.8vh);
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#project-2 {
+  padding: calc(6px + 0.6vw + 0.6vh);
+  font-size: calc(8px + 0.8vw + 0.8vh);
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#project-3 {
+  padding: calc(6px + 0.6vw + 0.6vh);
+  font-size: calc(8px + 0.8vw + 0.8vh);
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+#project-4 {
+  padding: calc(6px + 0.6vw + 0.6vh);
+  font-size: calc(8px + 0.8vw + 0.8vh);
+  transition: opacity 1s;
+  opacity: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -145,13 +173,13 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 1s, top 1s;
+  transition: opacity 0.8s, top 0.8s;
 }
 
 .top-line {
   flex: 0 0 auto;
   height: 20px;
-  background-color: #66B1CC;
+  background-color: #6BC0D5;
 }
 
 .pfp {
@@ -159,7 +187,7 @@ body::-webkit-scrollbar {
   height: 200px;
   text-align: center;
   position: relative;
-  background-image: url("images/dotted-background.svg");
+  background-color: #FFF4E6;
 }
 .pfp img {
   display: inline-block;
@@ -180,10 +208,11 @@ body::-webkit-scrollbar {
   color: black;
   font-size: 28px;
   padding: 0px 16px;
-  transition: color 0.2s;
+  transition: color 0.2s, transform 0.2s;
 }
 .pfp .icons a:hover {
   color: #66B1CC;
+  transform: translateY(-2px);
 }
 
 .intro {
@@ -193,6 +222,13 @@ body::-webkit-scrollbar {
   transition: color 0.5s;
   font-weight: 500;
 }
+.intro .mark.highlight {
+  color: orange;
+}
+.intro .mark.highlight.clickable:hover {
+  transition: color 0.2s;
+  color: #cc8400 !important;
+}
 .intro a {
   color: white;
   text-decoration: none;
@@ -200,7 +236,8 @@ body::-webkit-scrollbar {
 }
 .intro a:hover {
   text-decoration: underline;
-  color: #cc8400;
+  transition: color 0.2s;
+  color: #cc8400 !important;
 }
 .intro h1 {
   font-size: calc(12px + 1.2vw + 1.2vh);
@@ -225,7 +262,8 @@ body::-webkit-scrollbar {
 .clickable {
   cursor: pointer;
 }
-.clickable.close {
+
+#close {
   width: 100%;
   height: calc(15px + 1.5vw + 1.5vh);
   font-size: calc(12px + 1.2vw + 1.2vh);
@@ -233,15 +271,41 @@ body::-webkit-scrollbar {
   background-color: gray;
   transition: opacity 0.2s;
 }
-.clickable.close:hover {
+#close:hover {
   opacity: 1;
 }
-.clickable.close i {
+#close:hover > i {
+  transform: translateY(-2px);
+}
+#close i {
   display: block;
+  transition: transform 0.2s;
 }
 
 .projects {
   width: 100%;
+  padding: calc(6px + 0.6vw + 0.6vh);
+}
+.projects h1 {
+  font-size: calc(10px + 1vw + 1vh);
+  flex: 0 0 auto;
+  text-align: center;
+  padding: calc(4px + 0.4vw + 0.4vh);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-half {
+  grid-column: span 2;
+}
+
+@media (min-width: 576px) {
+  .col-half {
+    grid-column: span 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@
 
 $font-stack: "Lora";
 $background-color: #F4F4F4;
-$top-color: #66B1CC;
+$top-color: #6BC0D5;
 $bot-color: #4C5364;
 $primary: white;
 $secondary: orange;
@@ -58,6 +58,17 @@ $icons: 1, 2, 3, 4;
         animation-duration: 1s;
         animation-fill-mode: forwards;
         animation-delay: calc(#{$icon}s / 3 + 0.25s);
+    }
+}
+
+$projects: 1, 2, 3, 4;
+
+@each $project in $projects {
+    #project-#{$project} {
+        padding: calc(6px + 0.6vw + 0.6vh);
+        font-size: calc(8px + 0.8vw + 0.8vh);
+        transition: opacity 1s;
+        opacity: 0;
     }
 }
 
