@@ -104,31 +104,59 @@
 }
 
 #project-1 {
-  padding: calc(6px + 0.6vw + 0.6vh);
-  font-size: calc(8px + 0.8vw + 0.8vh);
+  margin: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(8px + 0.8vw + 0.8vh);
+  font-size: calc(3px + 0.6vw + 1.2vh);
   transition: opacity 1s;
   opacity: 0;
+  background-color: #3D74CC;
+}
+#project-1 h2 {
+  font-size: calc(4px + 0.8vw + 1.6vh);
+  line-height: 1.2;
+  margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
 
 #project-2 {
-  padding: calc(6px + 0.6vw + 0.6vh);
-  font-size: calc(8px + 0.8vw + 0.8vh);
+  margin: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(8px + 0.8vw + 0.8vh);
+  font-size: calc(3px + 0.6vw + 1.2vh);
   transition: opacity 1s;
   opacity: 0;
+  background-color: #CC3D58;
+}
+#project-2 h2 {
+  font-size: calc(4px + 0.8vw + 1.6vh);
+  line-height: 1.2;
+  margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
 
 #project-3 {
-  padding: calc(6px + 0.6vw + 0.6vh);
-  font-size: calc(8px + 0.8vw + 0.8vh);
+  margin: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(8px + 0.8vw + 0.8vh);
+  font-size: calc(3px + 0.6vw + 1.2vh);
   transition: opacity 1s;
   opacity: 0;
+  background-color: #3ECD64;
+}
+#project-3 h2 {
+  font-size: calc(4px + 0.8vw + 1.6vh);
+  line-height: 1.2;
+  margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
 
 #project-4 {
-  padding: calc(6px + 0.6vw + 0.6vh);
-  font-size: calc(8px + 0.8vw + 0.8vh);
+  margin: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(8px + 0.8vw + 0.8vh);
+  font-size: calc(3px + 0.6vw + 1.2vh);
   transition: opacity 1s;
   opacity: 0;
+  background-color: #CCA83D;
+}
+#project-4 h2 {
+  font-size: calc(4px + 0.8vw + 1.6vh);
+  line-height: 1.2;
+  margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
 
 * {
@@ -142,7 +170,7 @@ html, body {
 }
 
 body {
-  background-color: #F4F4F4;
+  background-color: #242526;
   color: white;
   font-family: "Lora";
   line-height: 1.6;
@@ -286,11 +314,14 @@ body::-webkit-scrollbar {
   width: 100%;
   padding: calc(6px + 0.6vw + 0.6vh);
 }
+.projects .highlight {
+  color: orange;
+}
 .projects h1 {
-  font-size: calc(10px + 1vw + 1vh);
+  font-size: calc(12px + 1.2vw + 1.2vh);
   flex: 0 0 auto;
   text-align: center;
-  padding: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(2px + 0.2vw + 0.2vh);
 }
 
 .row {

@@ -14,7 +14,7 @@ window.addEventListener('load', (event) => {
 
 const showModal = () => {
     modal.style.top = 0;
-    modal.style.opacity = 0.95;
+    modal.style.opacity = 1;
 
     const show = id => document.getElementById(id).style.opacity = 1.0;
 
