@@ -61,19 +61,19 @@ $icons: 1, 2, 3, 4;
     }
 }
 
-$projects: 1, 2, 3, 4;
+$projects: 1, 2, 3, 4, 5, 6;
 
 @each $project in $projects {
     #project-#{$project} {
         margin: calc(4px + 0.4vw + 0.4vh);
         padding: calc(8px + 0.8vw + 0.8vh);
-        font-size: calc(3px + 0.6vw + 1.2vh);
+        font-size: calc(3px + 0.6vw + 0.9vh);
         transition: opacity 1s;
         opacity: 0;
-        background-color: nth([#3D74CC, #CC3D58, #3ECD64, #CCA83D], $project);
+        background-color: nth([#2E5699, #992E5E, #992E2E, #1F9959, #99891F, #995E2E], $project);
 
         h2 {
-            font-size: calc(4px + 0.8vw + 1.6vh);
+            font-size: calc(4px + 0.8vw + 1.2vh);
             line-height: 1.2;
             margin-bottom: calc(4px + 0.4vw + 0.4vh);
         }

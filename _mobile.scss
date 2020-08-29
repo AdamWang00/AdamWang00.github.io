@@ -1,14 +1,20 @@
 .row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
-.col-half {
-    grid-column: span 2;
+.col-split {
+    grid-column: span 6;
 }
 
 @media (min-width: 576px) {
-    .col-half {
-        grid-column: span 1;
+    .col-split {
+        grid-column: span 3;
+    }
+}
+
+@media (min-width: 1000px) {
+    .col-split {
+        grid-column: span 2;
     }
 }

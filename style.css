@@ -106,13 +106,13 @@
 #project-1 {
   margin: calc(4px + 0.4vw + 0.4vh);
   padding: calc(8px + 0.8vw + 0.8vh);
-  font-size: calc(3px + 0.6vw + 1.2vh);
+  font-size: calc(3px + 0.6vw + 0.9vh);
   transition: opacity 1s;
   opacity: 0;
-  background-color: #3D74CC;
+  background-color: #2E5699;
 }
 #project-1 h2 {
-  font-size: calc(4px + 0.8vw + 1.6vh);
+  font-size: calc(4px + 0.8vw + 1.2vh);
   line-height: 1.2;
   margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
@@ -120,13 +120,13 @@
 #project-2 {
   margin: calc(4px + 0.4vw + 0.4vh);
   padding: calc(8px + 0.8vw + 0.8vh);
-  font-size: calc(3px + 0.6vw + 1.2vh);
+  font-size: calc(3px + 0.6vw + 0.9vh);
   transition: opacity 1s;
   opacity: 0;
-  background-color: #CC3D58;
+  background-color: #992E5E;
 }
 #project-2 h2 {
-  font-size: calc(4px + 0.8vw + 1.6vh);
+  font-size: calc(4px + 0.8vw + 1.2vh);
   line-height: 1.2;
   margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
@@ -134,13 +134,13 @@
 #project-3 {
   margin: calc(4px + 0.4vw + 0.4vh);
   padding: calc(8px + 0.8vw + 0.8vh);
-  font-size: calc(3px + 0.6vw + 1.2vh);
+  font-size: calc(3px + 0.6vw + 0.9vh);
   transition: opacity 1s;
   opacity: 0;
-  background-color: #3ECD64;
+  background-color: #992E2E;
 }
 #project-3 h2 {
-  font-size: calc(4px + 0.8vw + 1.6vh);
+  font-size: calc(4px + 0.8vw + 1.2vh);
   line-height: 1.2;
   margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
@@ -148,13 +148,41 @@
 #project-4 {
   margin: calc(4px + 0.4vw + 0.4vh);
   padding: calc(8px + 0.8vw + 0.8vh);
-  font-size: calc(3px + 0.6vw + 1.2vh);
+  font-size: calc(3px + 0.6vw + 0.9vh);
   transition: opacity 1s;
   opacity: 0;
-  background-color: #CCA83D;
+  background-color: #1F9959;
 }
 #project-4 h2 {
-  font-size: calc(4px + 0.8vw + 1.6vh);
+  font-size: calc(4px + 0.8vw + 1.2vh);
+  line-height: 1.2;
+  margin-bottom: calc(4px + 0.4vw + 0.4vh);
+}
+
+#project-5 {
+  margin: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(8px + 0.8vw + 0.8vh);
+  font-size: calc(3px + 0.6vw + 0.9vh);
+  transition: opacity 1s;
+  opacity: 0;
+  background-color: #99891F;
+}
+#project-5 h2 {
+  font-size: calc(4px + 0.8vw + 1.2vh);
+  line-height: 1.2;
+  margin-bottom: calc(4px + 0.4vw + 0.4vh);
+}
+
+#project-6 {
+  margin: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(8px + 0.8vw + 0.8vh);
+  font-size: calc(3px + 0.6vw + 0.9vh);
+  transition: opacity 1s;
+  opacity: 0;
+  background-color: #995E2E;
+}
+#project-6 h2 {
+  font-size: calc(4px + 0.8vw + 1.2vh);
   line-height: 1.2;
   margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
@@ -212,7 +240,7 @@ body::-webkit-scrollbar {
 
 .pfp {
   flex: 0 0 auto;
-  height: 200px;
+  height: 175px;
   text-align: center;
   position: relative;
   background-image: url("images/honeycomb.svg");
@@ -234,7 +262,7 @@ body::-webkit-scrollbar {
   position: relative;
   left: 100px;
   color: black;
-  font-size: 28px;
+  font-size: 25px;
   padding: 0px 16px;
   transition: color 0.2s, transform 0.2s;
 }
@@ -268,7 +296,7 @@ body::-webkit-scrollbar {
   color: #cc8400 !important;
 }
 .intro h1 {
-  font-size: calc(12px + 1.2vw + 1.2vh);
+  font-size: calc(5px + 1vw + 1.5vh);
   font-weight: 600;
 }
 .intro h1 .mark {
@@ -278,7 +306,7 @@ body::-webkit-scrollbar {
   margin: 10px 20px;
   text-align: center;
   max-width: 1000px;
-  font-size: calc(8px + 0.6vw + 0.6vh);
+  font-size: calc(3.5px + 0.7vw + 1.05vh);
 }
 .intro div.footer {
   margin-top: auto;
@@ -318,7 +346,7 @@ body::-webkit-scrollbar {
   color: orange;
 }
 .projects h1 {
-  font-size: calc(12px + 1.2vw + 1.2vh);
+  font-size: calc(5px + 1vw + 1.5vh);
   flex: 0 0 auto;
   text-align: center;
   padding: calc(2px + 0.2vw + 0.2vh);
@@ -326,16 +354,21 @@ body::-webkit-scrollbar {
 
 .row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
-.col-half {
-  grid-column: span 2;
+.col-split {
+  grid-column: span 6;
 }
 
 @media (min-width: 576px) {
-  .col-half {
-    grid-column: span 1;
+  .col-split {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 1000px) {
+  .col-split {
+    grid-column: span 2;
   }
 }
 
