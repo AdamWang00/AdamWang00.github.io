@@ -1,4 +1,5 @@
 let modal;
+let modalTimeouts = [];
 
 window.addEventListener('load', (event) => {
     modal = document.getElementById("modal");
@@ -15,20 +16,24 @@ window.addEventListener('load', (event) => {
 const showModal = () => {
     modal.style.top = 0;
     modal.style.opacity = 1;
+    modalTimeouts.forEach(clearTimeout);
 
     const show = id => document.getElementById(id).style.opacity = 1.0;
 
-    setTimeout(() => show("project-1"), 600);
-    setTimeout(() => show("project-2"), 800);
-    setTimeout(() => show("project-3"), 1000);
-    setTimeout(() => show("project-4"), 1200);
-    setTimeout(() => show("project-5"), 1400);
-    setTimeout(() => show("project-6"), 1600);
+    modalTimeouts = [
+        setTimeout(() => show("project-1"), 600),
+        setTimeout(() => show("project-2"), 800),
+        setTimeout(() => show("project-3"), 1000),
+        setTimeout(() => show("project-4"), 1200),
+        setTimeout(() => show("project-5"), 1400),
+        setTimeout(() => show("project-6"), 1600),
+    ];
 };
 
 const hideModal = () => {
     modal.style.top = "-100vh";
     modal.style.opacity = 0;
+    modalTimeouts.forEach(clearTimeout);
 
     const projects = [1, 2, 3, 4, 5, 6];
     projects.forEach(n => {

@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 
 .top-line {
     flex: 0 0 auto;
-    height: 20px;
+    height: 12px;
     background-color: $top-color;
 }
 
@@ -83,7 +83,7 @@ body::-webkit-scrollbar {
             transition: color 0.2s, transform 0.2s;
 
             &:hover {
-                color: #66B1CC;
+                color: $tertiary;
                 transform: translateY(-2px);
             }
         }
@@ -92,13 +92,27 @@ body::-webkit-scrollbar {
 
 .intro {
     background-color: $bot-color;
+    padding-top: 12px;
 
     .mark {
         transition: color 0.5s;
         font-weight: 500;
 
+        &.special {
+            font-weight: 600;
+        }
+
         &.highlight {
-            color: orange;
+            color: $secondary;
+
+            &.special {
+                color: $tertiary;
+
+                &.clickable:hover {
+                    transition: color 0.2s;
+                    color: scale-color($tertiary, $lightness: -20%) !important;
+                }
+            }
 
             &.clickable:hover {
                 transition: color 0.2s;
@@ -120,7 +134,7 @@ body::-webkit-scrollbar {
     }
 
     h1 {
-        font-size: calc(5px + 1vw + 1.5vh);
+        font-size: calc(11px + 0.8vw + 1.2vh);
         font-weight: 600;
 
         .mark {
@@ -129,10 +143,10 @@ body::-webkit-scrollbar {
     }
 
     div {
-        margin: 10px 20px;
+        margin: 12px 30px;
         text-align: center;
-        max-width: 1000px;
-        font-size: calc(3.5px + 0.7vw + 1.05vh);
+        max-width: 840px;
+        font-size: calc(7px + 0.5vw + 0.75vh);
 
         &.footer {
             margin-top: auto;
@@ -174,7 +188,7 @@ body::-webkit-scrollbar {
     padding: calc(6px + 0.6vw + 0.6vh);
 
     .highlight {
-        color: orange;
+        color: $secondary;
     }
 
     h1 {
