@@ -56,7 +56,7 @@ body::-webkit-scrollbar {
     height: 175px;
     text-align: center;
     position: relative;
-    background-image: url('images/honeycomb.svg');
+    background-color: #F1EDE0;
 
     img {
         display: inline-block;
@@ -196,6 +196,19 @@ body::-webkit-scrollbar {
         flex: 0 0 auto;
         text-align: center;
         padding: calc(2px + 0.2vw + 0.2vh);
+    }
+
+    a {
+        display: inline-block;
+        position: relative;
+        color: white;
+        margin-left: 12px;
+
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
     }
 }
 
