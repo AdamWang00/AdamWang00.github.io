@@ -198,7 +198,7 @@ html, body {
 }
 
 body {
-  background-color: #242526;
+  background: url("images/sayagata.png");
   color: white;
   font-family: "Lora";
   line-height: 1.6;
@@ -243,7 +243,6 @@ body::-webkit-scrollbar {
   height: 175px;
   text-align: center;
   position: relative;
-  background-color: #F1EDE0;
 }
 .pfp img {
   display: inline-block;
