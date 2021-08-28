@@ -25,7 +25,7 @@ $background-color: #242526;
 $top-color: #4C5364;
 $bot-color: #4C5364;
 $primary: white;
-$secondary: orange;
+$secondary: rgb(255, 199, 96);
 $tertiary: #66B1CC;
 
 // Other
@@ -62,7 +62,7 @@ $icons: 1, 2, 3, 4;
     }
 }
 
-$projects: 1, 2, 3, 4, 5, 6;
+$projects: 1, 2, 3, 4, 5, 6, 7, 8;
 
 @each $project in $projects {
     #project-#{$project} {
@@ -71,7 +71,7 @@ $projects: 1, 2, 3, 4, 5, 6;
         font-size: calc(3px + 0.6vw + 0.9vh);
         transition: opacity 1s;
         opacity: 0;
-        background-color: nth([#2E5699, #992E5E, #992E2E, #1F9959, #99891F, #995E2E], $project);
+        background-color: nth([#2E5699, #992E5E, #992E2E, #1F9959, #99891F, #995E2E, #995E2E, #995E2E], $project);
 
         h2 {
             font-size: calc(4px + 0.8vw + 1.2vh);

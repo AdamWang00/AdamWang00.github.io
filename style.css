@@ -187,6 +187,34 @@
   margin-bottom: calc(4px + 0.4vw + 0.4vh);
 }
 
+#project-7 {
+  margin: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(8px + 0.8vw + 0.8vh);
+  font-size: calc(3px + 0.6vw + 0.9vh);
+  transition: opacity 1s;
+  opacity: 0;
+  background-color: #995E2E;
+}
+#project-7 h2 {
+  font-size: calc(4px + 0.8vw + 1.2vh);
+  line-height: 1.2;
+  margin-bottom: calc(4px + 0.4vw + 0.4vh);
+}
+
+#project-8 {
+  margin: calc(4px + 0.4vw + 0.4vh);
+  padding: calc(8px + 0.8vw + 0.8vh);
+  font-size: calc(3px + 0.6vw + 0.9vh);
+  transition: opacity 1s;
+  opacity: 0;
+  background-color: #995E2E;
+}
+#project-8 h2 {
+  font-size: calc(4px + 0.8vw + 1.2vh);
+  line-height: 1.2;
+  margin-bottom: calc(4px + 0.4vw + 0.4vh);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -282,7 +310,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
 }
 .intro .mark.highlight {
-  color: orange;
+  color: #ffc760;
 }
 .intro .mark.highlight.special {
   color: #66B1CC;
@@ -293,7 +321,7 @@ body::-webkit-scrollbar {
 }
 .intro .mark.highlight.clickable:hover {
   transition: color 0.2s;
-  color: #cc8400 !important;
+  color: #ffae1a !important;
 }
 .intro a {
   color: white;
@@ -303,7 +331,7 @@ body::-webkit-scrollbar {
 .intro a:hover {
   text-decoration: underline;
   transition: color 0.2s;
-  color: #cc8400 !important;
+  color: #ffae1a !important;
 }
 .intro h1 {
   font-size: calc(11px + 0.8vw + 1.2vh);
@@ -353,7 +381,7 @@ body::-webkit-scrollbar {
   padding: calc(6px + 0.6vw + 0.6vh);
 }
 .projects .highlight {
-  color: orange;
+  color: #ffc760;
 }
 .projects h1 {
   font-size: calc(5px + 1vw + 1.5vh);
