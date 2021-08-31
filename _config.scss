@@ -1,32 +1,32 @@
 // Fonts
 
 @font-face {
-    src: url("fonts/Lora-Regular.ttf") format("truetype");
-    font-family: "Lora";
-    font-weight: 400;
+    src: url("fonts/Roboto-Light.ttf") format("truetype");
+    font-family: "Roboto";
+    font-weight: 400; // 300
 }
 
 @font-face {
-    src: url("fonts/Lora-Medium.ttf") format("truetype");
-    font-family: "Lora";
-    font-weight: 500;
+    src: url("fonts/Roboto-Regular.ttf") format("truetype");
+    font-family: "Roboto";
+    font-weight: 500; // 400
 }
 
 @font-face {
-    src: url("fonts/Lora-SemiBold.ttf") format("truetype");
-    font-family: "Lora";
-    font-weight: 600;
+    src: url("fonts/Roboto-Medium.ttf") format("truetype");
+    font-family: "Roboto";
+    font-weight: 600; // 500
 }
 
 // Vars
 
-$font-stack: "Lora";
-$background-color: #242526;
-$top-color: #4C5364;
-$bot-color: #4C5364;
+$font-stack: "Roboto";
+$background-color: rgb(32, 32, 32);
+$top-color: rgb(86, 88, 90);
+$bot-color: rgb(86, 88, 90);
 $primary: white;
-$secondary: rgb(255, 199, 96);
-$tertiary: #66B1CC;
+$secondary: rgb(255, 200, 100);
+$tertiary: rgb(100, 200, 255);
 
 // Other
 

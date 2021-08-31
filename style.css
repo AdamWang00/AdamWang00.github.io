@@ -1,16 +1,16 @@
 @font-face {
-  src: url("fonts/Lora-Regular.ttf") format("truetype");
-  font-family: "Lora";
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
+  font-family: "Roboto";
   font-weight: 400;
 }
 @font-face {
-  src: url("fonts/Lora-Medium.ttf") format("truetype");
-  font-family: "Lora";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: "Roboto";
   font-weight: 500;
 }
 @font-face {
-  src: url("fonts/Lora-SemiBold.ttf") format("truetype");
-  font-family: "Lora";
+  src: url("fonts/Roboto-Medium.ttf") format("truetype");
+  font-family: "Roboto";
   font-weight: 600;
 }
 [hidden] {
@@ -221,15 +221,11 @@
   padding: 0;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   background: url("images/sayagata.png");
   color: white;
-  font-family: "Lora";
-  line-height: 1.6;
+  font-family: "Roboto";
+  line-height: 1.5;
   position: relative;
   min-height: 100vh;
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -247,11 +243,11 @@ body::-webkit-scrollbar {
 
 .container {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 #modal {
-  background-color: #242526;
+  background-color: #202020;
   position: absolute;
   top: -100vh;
   width: 100%;
@@ -263,44 +259,45 @@ body::-webkit-scrollbar {
 .top-line {
   flex: 0 0 auto;
   height: 12px;
-  background-color: #4C5364;
+  background-color: #56585a;
 }
 
 .pfp {
   flex: 0 0 auto;
-  height: 175px;
-  text-align: center;
+  height: 192px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .pfp img {
-  display: inline-block;
-  height: 100%;
+  background-color: rgba(100, 200, 255, 0.2);
+  height: 92%;
+  border-radius: 50%;
+  border: 4px solid white;
 }
 .pfp .icons {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
-  padding: 10px 0px;
+  padding: 10px 16px;
 }
 .pfp .icons a {
   flex: 1;
   display: block;
-  position: relative;
-  left: 100px;
   color: black;
   font-size: 25px;
-  padding: 0px 16px;
   transition: color 0.2s, transform 0.2s;
 }
 .pfp .icons a:hover {
-  color: #66B1CC;
+  color: #64c8ff;
   transform: translateY(-2px);
 }
 
 .intro {
-  background-color: #4C5364;
-  padding-top: 12px;
+  background-color: #56585a;
+  padding-top: 24px;
 }
 .intro .mark {
   transition: color 0.5s;
@@ -310,18 +307,18 @@ body::-webkit-scrollbar {
   font-weight: 600;
 }
 .intro .mark.highlight {
-  color: #ffc760;
+  color: #ffc864;
 }
 .intro .mark.highlight.special {
-  color: #66B1CC;
+  color: #64c8ff;
 }
 .intro .mark.highlight.special.clickable:hover {
   transition: color 0.2s;
-  color: #3d97b8 !important;
+  color: #1dafff !important;
 }
 .intro .mark.highlight.clickable:hover {
   transition: color 0.2s;
-  color: #ffae1a !important;
+  color: #ffaf1d !important;
 }
 .intro a {
   color: white;
@@ -331,7 +328,7 @@ body::-webkit-scrollbar {
 .intro a:hover {
   text-decoration: underline;
   transition: color 0.2s;
-  color: #ffae1a !important;
+  color: #ffaf1d !important;
 }
 .intro h1 {
   font-size: calc(11px + 0.8vw + 1.2vh);
@@ -381,7 +378,7 @@ body::-webkit-scrollbar {
   padding: calc(6px + 0.6vw + 0.6vh);
 }
 .projects .highlight {
-  color: #ffc760;
+  color: #ffc864;
 }
 .projects h1 {
   font-size: calc(5px + 1vw + 1.5vh);
