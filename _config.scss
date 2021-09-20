@@ -1,32 +1,33 @@
 // Fonts
 
 @font-face {
-    src: url("fonts/Roboto-Light.ttf") format("truetype");
+    src: url("fonts/OpenSans-Regular.ttf") format("truetype");
     font-family: "Roboto";
-    font-weight: 400; // 300
+    font-weight: 400; // 400
 }
 
 @font-face {
-    src: url("fonts/Roboto-Regular.ttf") format("truetype");
+    src: url("fonts/OpenSans-SemiBold.ttf") format("truetype");
     font-family: "Roboto";
-    font-weight: 500; // 400
+    font-weight: 500; // 600
 }
 
 @font-face {
-    src: url("fonts/Roboto-Medium.ttf") format("truetype");
+    src: url("fonts/OpenSans-Bold.ttf") format("truetype");
     font-family: "Roboto";
-    font-weight: 600; // 500
+    font-weight: 600; // 700
 }
 
 // Vars
 
 $font-stack: "Roboto";
 $background-color: rgb(32, 32, 32);
-$top-color: rgb(86, 88, 90);
-$bot-color: rgb(86, 88, 90);
-$primary: white;
+$top-color: rgb(64, 64, 64);
+$bot-color: rgb(64, 64, 64);
+$primary: rgb(248, 248, 248);
 $secondary: rgb(255, 200, 100);
 $tertiary: rgb(100, 200, 255);
+$light-background: rgb(128, 128, 128);
 
 // Other
 
