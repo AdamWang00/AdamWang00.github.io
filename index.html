@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <div class="container vertical">
         <div class="top-line"></div>
@@ -20,9 +22,13 @@
             <img src="images/me.png" alt="Picture of me">
             <div class="icons vertical center">
                 <a id="icon-1" target="_blank" href="https://www.github.com/AdamWang00"><i class="fa fa-github"></i></a>
-                <a id="icon-2" target="_blank" href="https://www.linkedin.com/in/adamwang3"><i class="fa fa-linkedin-square"></i></a>
-                <a id="icon-3" target="_blank" href="https://www.quora.com/profile/Adam-Wang-91"><i class="fa fa-quora"></i></a>
-                <a id="icon-4" target="_blank" href="https://drive.google.com/file/d/1rt0TQPYIR868Zg53xLuiM-ChWLUx8p0P/view?usp=sharing"><i class="fa fa-file-text-o"></i></a>
+                <a id="icon-2" target="_blank" href="https://www.linkedin.com/in/adamwang3"><i
+                        class="fa fa-linkedin-square"></i></a>
+                <a id="icon-3" target="_blank" href="https://www.quora.com/profile/Adam-Wang-91"><i
+                        class="fa fa-quora"></i></a>
+                <a id="icon-4" target="_blank"
+                    href="https://drive.google.com/file/d/1rt0TQPYIR868Zg53xLuiM-ChWLUx8p0P/view?usp=sharing"><i
+                        class="fa fa-file-text-o"></i></a>
             </div>
         </div>
         <div class="flex intro vertical center">
@@ -30,16 +36,28 @@
                 <h1 id="fade-1">Hi, I'm <span class="mark">Adam Wang</span>.</h1>
             </div>
             <div class="vertical center">
-                <p id="fade-2">I study <span class="mark">computer science</span> at Brown University, and I also have interests in <span class="mark">applied math</span> and <span class="mark">economics</span>. I enjoy playing the cello, hiking, and developing web and mobile apps.</p>
+                <p id="fade-2">I study <span class="mark">computer science</span> at Brown University, and I also have
+                    interests in <span class="mark">applied math</span> and <span class="mark">economics</span>. I enjoy
+                    playing the cello, hiking, and developing web and mobile apps.</p>
             </div>
             <div class="vertical center">
-                <p id="fade-3">Currently, I'm exploring generative models for indoor scenes as a <span class="mark">research assistant</span> at Brown Visual Computing. I'm also a <span class="mark">product manager</span> at Full Stack at Brown and <span class="mark">technology chair</span> of Brown's Applied Math DUG.</p>
+                <p id="fade-3">Currently, I'm exploring generative models for indoor scenes as a <span
+                        class="mark">research assistant</span> at Brown Visual Computing. I'm also a <span
+                        class="mark">product manager</span> at Full Stack at Brown and <span class="mark">technology
+                        chair</span> of Brown's Applied Math DUG. I was previously a <span class="mark">teaching
+                        assistant</span> for
+                    Brown's computer science department.</p>
+                </p>
             </div>
             <div class="vertical center">
-                <p id="fade-4">This past summer, I was a <span class="mark">software development engineer intern</span> at Amazon in the physical retail division. Before that, I was a <span class="mark">teaching assistant</span> for Brown's computer science department.</p>
+                <p id="fade-4">Next summer, I will be a <span class="mark">software engineer intern</span> at Meta. This
+                    past summer, I was a <span class="mark">software development engineer intern</span> at Amazon in the
+                    physical retail organization.
             </div>
             <div class="vertical center">
-                <p id="fade-5"><span class="mark special clickable" onclick="showModal();">Click here</span> to see some of my software projects! I can be contacted at <a id="email" class="mark" href="mailto:adam_wang1@brown.edu">adam_wang1@brown.edu</a>.</p>
+                <p id="fade-5"><span class="mark special clickable" onclick="showModal();">Click here</span> to see some
+                    of my software projects! I can be contacted at <a id="email" class="mark"
+                        href="mailto:adam_wang1@brown.edu">adam_wang1@brown.edu</a>.</p>
             </div>
             <div class="footer">
                 Created by Adam Wang &copy; 2021
@@ -50,46 +68,68 @@
             <div id="close" class="clickable horizontal center" onclick="hideModal();">
                 <i class="fa fa-chevron-up"></i>
             </div>
-    <!--         <div class="projects flex horizontal center">
+            <!--         <div class="projects flex horizontal center">
                 <p style="font-size: 20px;">This page is currently being updated. Please view my projects on my resume or LinkedIn.</p>
             </div> -->
             <div class="projects flex vertical">
                 <h1>My Recent Projects</h1>
                 <div class="row flex">
                     <div id="project-1" class="col-split">
-                        <h2>1st@Brown <span class="highlight">- in progress</span> <a target="_blank" href="https://github.com/fullstackatbrown/project-first-at-brown"><i class="fa fa-github"></i></a></h2>
+                        <h2>1st@Brown <span class="highlight">- in progress</span> <a target="_blank"
+                                href="https://github.com/fullstackatbrown/project-first-at-brown"><i
+                                    class="fa fa-github"></i></a></h2>
                         <div>
-                            Android/iOS mobile app that allows first-year students to meet others who share common interests. Features Google sign-in, content moderation, and global and private chatrooms powered by socket.io.
+                            Android/iOS mobile app that allows first-year students to meet others who share common
+                            interests. Features Google sign-in, content moderation, and global and private chatrooms
+                            powered by socket.io.
                         </div>
                     </div>
                     <div id="project-2" class="col-split">
-                        <h2>Coordinator <a target="_blank" href="http://coordinator.adamwang.me/"><i class="fa fa-link"></i></a></h2>
+                        <h2>Coordinator <a target="_blank" href="http://coordinator.adamwang.me/"><i
+                                    class="fa fa-link"></i></a></h2>
                         <div>
-                            Web app that finds optimal meeting times for a group of people based on each person’s availability. Subgroups can be formed using a variation of k-means clustering. The interface is accessible to users with disabilities.
+                            Web app that finds optimal meeting times for a group of people based on each person’s
+                            availability. Subgroups can be formed using a variation of k-means clustering. The interface
+                            is accessible to users with disabilities.
                         </div>
                     </div>
                     <div id="project-3" class="col-split">
-                        <h2>Circles <a target="_blank" href="https://devpost.com/software/circles-tvo1ul"><i class="fa fa-trophy"></i></a><a target="_blank" href="https://github.com/AdamWang00/hab-2021"><i class="fa fa-github"></i></a></h2>
+                        <h2>Circles <a target="_blank" href="https://devpost.com/software/circles-tvo1ul"><i
+                                    class="fa fa-trophy"></i></a><a target="_blank"
+                                href="https://github.com/AdamWang00/hab-2021"><i class="fa fa-github"></i></a></h2>
                         <div>
-                            Won the Wolfram Award at Hack@Brown 2021. Android/iOS social media app that allows users to make plans and share memories with their friend circles. Users can control content visibility to protect their privacy.
+                            Won the Wolfram Award at Hack@Brown 2021. Android/iOS social media app that allows users to
+                            make plans and share memories with their friend circles. Users can control content
+                            visibility to protect their privacy.
                         </div>
                     </div>
                     <div id="project-4" class="col-split">
-                        <h2>Noteflow <a target="_blank" href="https://noteflow.adamwang.me/"><i class="fa fa-link"></i></a><a target="_blank" href="https://github.com/AdamWang00/noteflow"><i class="fa fa-github"></i></a></h2>
+                        <h2>Noteflow <a target="_blank" href="https://noteflow.adamwang.me/"><i
+                                    class="fa fa-link"></i></a><a target="_blank"
+                                href="https://github.com/AdamWang00/noteflow"><i class="fa fa-github"></i></a></h2>
                         <div>
-                            Web app for composing AI-generated melodies using Magenta.js. The music is rendered in staff notation, which users can listen to, adjust for key and tempo, save to their accounts, and share with others.
+                            Web app for composing AI-generated melodies using Magenta.js. The music is rendered in staff
+                            notation, which users can listen to, adjust for key and tempo, save to their accounts, and
+                            share with others.
                         </div>
                     </div>
                     <div id="project-5" class="col-split">
-                        <h2>Bear Essentials <a target="_blank" href="https://github.com/FullStackAtBrownTeam/project-bear-essentials"><i class="fa fa-github"></i></a></h2>
+                        <h2>Bear Essentials <a target="_blank"
+                                href="https://github.com/FullStackAtBrownTeam/project-bear-essentials"><i
+                                    class="fa fa-github"></i></a></h2>
                         <div>
-                            Android/iOS mobile app allowing Brown University students to view dining schedules, laundry room statuses, and campus maps. Features include subscription-based notifications and stored user preferences.
+                            Android/iOS mobile app allowing Brown University students to view dining schedules, laundry
+                            room statuses, and campus maps. Features include subscription-based notifications and stored
+                            user preferences.
                         </div>
                     </div>
                     <div id="project-6" class="col-split">
-                        <h2>AMDUG Website <a target="_blank" href="https://brownapmadug.com/"><i class="fa fa-link"></i></a><a target="_blank" href="https://github.com/AdamWang00/amdug-website"><i class="fa fa-github"></i></a></h2>
+                        <h2>AMDUG Website <a target="_blank" href="https://brownapmadug.com/"><i
+                                    class="fa fa-link"></i></a><a target="_blank"
+                                href="https://github.com/AdamWang00/amdug-website"><i class="fa fa-github"></i></a></h2>
                         <div>
-                            Modern responsive website for Brown’s Applied Math Departmental Undergraduate Group. Features an event blog and contact form maintained by admin accounts.
+                            Modern responsive website for Brown’s Applied Math Departmental Undergraduate Group.
+                            Features an event blog and contact form maintained by admin accounts.
                         </div>
                     </div>
                 </div>
@@ -97,4 +137,5 @@
         </div>
     </div>
 </body>
+
 </html>
